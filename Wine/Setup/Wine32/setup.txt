@@ -1,0 +1,27 @@
+wine config setup :
+terminal : bash
+WINEARCH=win32 WINEPREFIX=~/.wine32 winecfg
+^ config : GUI
+klick default settings
+
+pilih windows version "sesuaikan versi windows" "default windows 10"
+
+klick apply
+
+klick ok
+
+WINEPREFIX=~/.wine32 winetricks corefonts
+WINEPREFIX=~/.wine32 winetricks vcrun2010
+WINEPREFIX=~/.wine32 winetricks vcrun2008
+WINEPREFIX=~/.wine32 winetricks riched20
+WINEPREFIX=~/.wine32 winetricks gdiplus
+WINEPREFIX=~/.wine32 winetricks msxml6
+
+WINEPREFIX=~/.wine32 wineboot -r
+
+WINEPREFIX=~/.wine32 winetricks list-installed
+
+cd [lokasi folder file32]
+
+WINEPREFIX=~/.wine32 wine [file-exe]
+WINEPREFIX=~/.wine32 wine [setup-exe]

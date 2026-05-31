@@ -1,0 +1,39 @@
+wine installation setup :
+terminal : bash
+sudo dpkg --add-architecture i386
+
+dpkg --print-foreign-architectures
+
+wine installation setup :
+terminal : bash
+sudo apt update
+sudo apt install wine
+sudo apt install wine32
+sudo apt install wine64
+sudo apt install winetricks
+sudo apt install fonts-wine
+
+wine --version
+
+wine config setup :
+terminal : bash
+wineboot
+
+winecfg
+^ config : GUI
+klick default settings
+
+pilih windows version "sesuaikan versi windows" "default windows 10"
+
+klick apply
+
+klick ok
+
+wineboot -r
+wineboot -u
+
+winetricks list-installed
+winetricks list-all
+
+wine [file-exe]
+wine notepad

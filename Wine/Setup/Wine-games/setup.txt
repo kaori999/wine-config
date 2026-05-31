@@ -1,0 +1,36 @@
+wine installation setup :
+terminal : bash
+sudo apt update
+sudo apt install mesa-vulkan-drivers // untuk pendukung depedensi dxvk "untuk igpu/amd" "sesuaikan dengan gpu hardware"
+sudo apt install nvidia-vulkan-icd // untuk pendukung depedensi dxvk "untuk nvidia" "sesuaikan dengan gpu hardware"
+
+wine config setup :
+terminal : bash
+WINEPREFIX=~/.wine-games winecfg
+^ config : GUI
+klick default settings
+
+pilih windows version "sesuaikan versi windows" "default windows 10"
+
+klick apply
+
+klick ok
+
+WINEPREFIX=~/.wine-games winetricks corefonts
+WINEPREFIX=~/.wine-games winetricks vcrun2019
+WINEPREFIX=~/.wine-games winetricks vcrun2017
+WINEPREFIX=~/.wine-games winetricks vcrun2015
+WINEPREFIX=~/.wine-games winetricks dxvk
+WINEPREFIX=~/.wine-games winetricks d3dx9
+WINEPREFIX=~/.wine-games winetricks xact
+WINEPREFIX=~/.wine-games winetricks gdiplus
+WINEPREFIX=~/.wine-games winetricks d3dcompiler_47
+
+WINEPREFIX=~/.wine-games wineboot -r
+
+WINEPREFIX=~/.wine-games winetricks list-installed
+
+cd [lokasi folder game]
+
+WINEPREFIX=~/.wine-games wine [game-exe]
+WINEPREFIX=~/.wine-games wine [setup-exe]

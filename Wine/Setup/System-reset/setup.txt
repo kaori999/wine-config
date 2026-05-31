@@ -1,0 +1,28 @@
+wine config setup :
+terminal : bash
+sudo apt remove --purge wine
+sudo apt remove --purge wine32
+sudo apt remove --purge wine64
+sudo apt remove --purge winetricks
+sudo apt remove --purge fonts-wine
+
+sudo apt autoremove --purge
+
+ls ~ | grep wine
+
+sudo rm -rf ~/.wine
+sudo rm -rf ~/wine-*
+
+sudo rm -rf ~/.wine-games
+sudo rm -rf ~/.wine32
+sudo rm -rf ~/.wine64
+
+sudo rm -rf ~/.config/wine
+sudo rm -rf ~/.local/share/applications/wine
+
+sudo rm -rf ~/.cache/wine
+sudo rm -rf ~/.cache/winetricks
+sudo rm -rf ~/.cache/mesa_shader_cache
+
+// log sisa data
+find / -name "*wine*" 2>/dev/null // cek lebih menyeluruh
