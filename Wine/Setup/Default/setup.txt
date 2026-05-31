@@ -23,7 +23,7 @@ winecfg
 ^ config : GUI
 klick default settings
 
-pilih windows version "sesuaikan versi windows" "default windows 10"
+choose windows version "default windows 10"
 
 klick apply
 
