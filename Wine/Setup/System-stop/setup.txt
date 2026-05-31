@@ -2,9 +2,10 @@ wine config setup :
 terminal : bash
 ps aux | grep wine
 
-// command stop wine
+// wine's built-in stop command
 wineboot -k
 
+// system built-in stop command
 sudo kill [id] 
 sudo kill -9 [id]
 
