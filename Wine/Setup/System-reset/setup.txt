@@ -24,5 +24,5 @@ sudo rm -rf ~/.cache/wine
 sudo rm -rf ~/.cache/winetricks
 sudo rm -rf ~/.cache/mesa_shader_cache
 
-// log sisa data
-find / -name "*wine*" 2>/dev/null // cek lebih menyeluruh
+// check remaining data
+find / -name "*wine*" 2>/dev/null // purge check
