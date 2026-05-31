@@ -2,12 +2,11 @@ wine config setup :
 terminal : bash
 ps aux | grep wine
 
-// perintah stop bawaan wine
+// command stop wine
 wineboot -k
 
-sudo kill [id] // cara paksa pertama "tidak disarankan"
-sudo kill -9 [id] // cara paksa kedua "tidak disarankan"
+sudo kill [id] 
+sudo kill -9 [id]
 
-sudo pkill -f [system] // cara paksa jika program tetap berjalan "tidak disarankan"
-sudo pkill -9 [system] // paksa kill total jika program tetap berjalan "tidak disarankan"
-
+sudo pkill -f [system]
+sudo pkill -9 [system] 
