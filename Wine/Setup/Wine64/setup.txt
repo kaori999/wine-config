@@ -4,7 +4,7 @@ WINEARCH=win64 WINEPREFIX=~/.wine64 winecfg
 ^ config : GUI
 klick default settings
 
-pilih windows version "sesuaikan versi windows" "default windows 10"
+choose windows version "default windows 10"
 
 klick apply
 
@@ -22,7 +22,7 @@ WINEPREFIX=~/.wine64 wineboot -r
 
 WINEPREFIX=~/.wine64 winetricks list-installed
 
-cd [lokasi folder file64]
+cd [folder location file64]
 
 WINEPREFIX=~/.wine64 wine [file-exe]
 WINEPREFIX=~/.wine64 wine [setup-exe]
