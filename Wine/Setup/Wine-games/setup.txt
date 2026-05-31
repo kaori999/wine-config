@@ -1,8 +1,8 @@
 wine installation setup :
 terminal : bash
 sudo apt update
-sudo apt install mesa-vulkan-drivers // untuk pendukung depedensi dxvk "untuk igpu/amd" "sesuaikan dengan gpu hardware"
-sudo apt install nvidia-vulkan-icd // untuk pendukung depedensi dxvk "untuk nvidia" "sesuaikan dengan gpu hardware"
+sudo apt install mesa-vulkan-drivers // for dxvk dependency support "for igpu/amd" "adjust to gpu hardware"
+sudo apt install nvidia-vulkan-icd // for dxvk dependency support "for nvidia" "adjust to gpu hardware"
 
 wine config setup :
 terminal : bash
@@ -10,7 +10,7 @@ WINEPREFIX=~/.wine-games winecfg
 ^ config : GUI
 klick default settings
 
-pilih windows version "sesuaikan versi windows" "default windows 10"
+choose windows version "default windows 10"
 
 klick apply
 
