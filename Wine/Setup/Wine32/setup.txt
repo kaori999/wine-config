@@ -21,7 +21,7 @@ WINEPREFIX=~/.wine32 wineboot -r
 
 WINEPREFIX=~/.wine32 winetricks list-installed
 
-cd [lokasi folder file32]
+cd [folder location file32]
 
 WINEPREFIX=~/.wine32 wine [file-exe]
 WINEPREFIX=~/.wine32 wine [setup-exe]
