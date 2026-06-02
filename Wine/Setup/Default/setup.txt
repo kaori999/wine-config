@@ -1,10 +1,10 @@
-wine installation setup :
+wine installation setup : "setup-1"
 terminal : bash
 sudo dpkg --add-architecture i386
 
 dpkg --print-foreign-architectures
 
-wine installation setup :
+wine installation setup : "setup-2"
 terminal : bash
 sudo apt update
 sudo apt install wine
