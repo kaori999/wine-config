@@ -30,7 +30,7 @@ WINEPREFIX=~/.wine-games wineboot -r
 
 WINEPREFIX=~/.wine-games winetricks list-installed
 
-cd [location folder game]
+cd [folder location games]
 
 WINEPREFIX=~/.wine-games wine [game-exe]
 WINEPREFIX=~/.wine-games wine [setup-exe]
