@@ -9,5 +9,6 @@ wineboot -k
 sudo kill [id] 
 sudo kill -9 [id]
 
+// system built-in stop command
 sudo pkill -f [system]
 sudo pkill -9 [system] 
